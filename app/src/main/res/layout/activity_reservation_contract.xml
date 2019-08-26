@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ReservationContractActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <com.team.smart.customfonts.MyTextView_Roboto_Medium
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="최적의 회의실 매칭과 빠른 답변을 위하여 아래의 정보를 제공해 주시기 바랍니다."
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="19dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_height="28dp"
+                />
+
+            <com.team.smart.customfonts.MyTextView_Roboto_Regular
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:text="1. 언제 행사를 진행하실 예정이신가요?" />
+
+            <TextView />
+
+            <TableRow>
+
+
+                <EditText
+                    android:background="@drawable/stroke"
+                    android:id="@+id/date"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:text="Date"
+                    android:textSize="25sp"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:layout_marginRight="140dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="미정"
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <CheckBox
+                    android:layout_marginLeft="10dp"
+                    android:text="3일이상 장기대관"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:hint="장기대관 날짜를 구체적으로 입력해주세요"
+                    />
+            </TableRow>
+            <TextView
+                android:layout_height="30dp"
+                />
+
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="50dp"
+                />
+
+            <TableRow>
+                <com.team.smart.customfonts.MyTextView_Roboto_Regular
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="2. 대관 시간은 언제인가요?"
+                    />
+
+            </TableRow>
+            <TextView />
+            <TableRow>
+                <TableLayout>
+                    <TableRow>
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/stroke"
+                            android:id="@+id/time1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textSize="20dp"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            />
+                        <TextView
+                            android:text="시 부터"
+
+                            />
+                        <EditText
+                            android:background="@drawable/stroke"
+                            android:id="@+id/time2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textSize="20dp"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            />
+                        <TextView
+                            android:text="시 까지"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="3.회의 위치는 어디인가요?"
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:text="종로구 1호점(세종대로),Seminer RoomC"
+                    android:clickable="false"
+                    android:focusable="false"
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:text="광화문역 5호선"
+                    android:clickable="false"
+                    android:focusable="false"
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:hint="추가로 원하는 지역을 입력해주세요"
+                    />
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="4.참석 인원은 몇 명인가요?"
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <TableLayout>
+                    <TableRow>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:text="최소"
+                            />
+                        <EditText
+                            android:background="@drawable/stroke"
+                            android:layout_width="80dp"
+
+                            />
+                        <TextView
+                            android:text="명부터"
+
+                            />
+                        <EditText
+                            android:layout_width="80dp"
+                            android:background="@drawable/stroke"
+                            />
+                        <TextView
+                            android:text="명까지"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="5.원하시는 테이블 배치를 선택해주세요."
+                    />
+            </TableRow>
+
+            <TableRow>
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rg1"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="강의식"
+                        android:drawableTop="@drawable/room1"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="연회식"
+                        android:drawableTop="@drawable/room2"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="분임식"
+                        android:drawableTop="@drawable/room3"
+                        />
+
+                </RadioGroup>
+
+            </TableRow>
+            <TableRow>
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rg2"
+                    >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="U자형"
+                        android:drawableTop="@drawable/room4"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="극장식"
+                        android:drawableTop="@drawable/room5"
+                        />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="6. 예산은 얼마인가요?"
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <TableLayout>
+                    <TableRow>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:text="최소"
+                            />
+                        <EditText
+                            android:background="@drawable/stroke"
+                            android:layout_width="80dp"
+
+                            />
+                        <TextView
+                            android:text="만원부터"
+
+                            />
+                        <EditText
+                            android:layout_width="80dp"
+                            android:background="@drawable/stroke"
+                            />
+                        <TextView
+                            android:text="만원까지"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="7.필요하신 추가 장비/서비스를 선택해주세요"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TableLayout>
+                    <TableRow>
+                        <CheckBox
+                            android:text="빔프로젝터/패널"
+                            android:drawableTop="@drawable/item1"
+                            />
+                        <CheckBox
+                            android:text="음향 시스템"
+                            android:drawableTop="@drawable/item2"
+                            />
+                        <CheckBox
+                            android:text="강연대"
+                            android:drawableTop="@drawable/item3"
+                            />
+                    </TableRow>
+
+                    <TableRow>
+                        <CheckBox
+                            android:text="화이트보드"
+                            android:drawableTop="@drawable/item4"
+                            />
+                        <CheckBox
+                            android:text="화상회의장비"
+                            android:drawableTop="@drawable/item5"
+                            />
+                        <CheckBox
+                            android:text="노트북"
+                            android:drawableTop="@drawable/item6"
+                            />
+                    </TableRow>
+
+                    <TableRow>
+                        <CheckBox
+                            android:text="포인터"
+                            android:drawableTop="@drawable/item7"
+                            />
+                        <CheckBox
+                            android:text="통역/전시 부스"
+                            android:drawableTop="@drawable/item8"
+                            />
+                        <CheckBox
+                            android:text="파티션"
+                            android:drawableTop="@drawable/item9"
+                            />
+                    </TableRow>
+
+                    <TableRow>
+                        <CheckBox
+                            android:text="다과"
+                            android:drawableTop="@drawable/item10"
+                            />
+                        <CheckBox
+                            android:text="도시락"
+                            android:drawableTop="@drawable/item11"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <CheckBox
+                    android:textColor="#000000"
+                    android:text="8.대관 불가시 다른 회의실을 추천 받으시겠습니까?"
+                    />
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="9.기타 요청사항을 입력해주세요."
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="기타 요청사항을 입력해주세요"
+                    android:background="@drawable/stroke"
+                    />
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="10. 예약자의 정보를 알려주세요."
+                    />
+            </TableRow>
+
+            <TextView />
+
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="이름 :"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:hint="이름을 입력해주세요"
+                    />
+            </TableRow>
+            <TextView />
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="단체/회사명:"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:hint="단체명,회사명을 입력해주세요"
+                    />
+            </TableRow>
+            <TextView />
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="휴대폰"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:hint="휴대폰 번호를 입력해주세요"
+                    />
+            </TableRow>
+            <TextView />
+            <TableRow>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:text="이메일 :"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke"
+                    android:hint="이메일 주소를 입력해주세요"
+                    />
+            </TableRow>
+
+            <TextView
+                android:layout_height="35dp"
+                />
+            <View
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                />
+            <TextView
+                android:layout_height="35dp"
+                />
+
+            <TableRow>
+                <TableLayout>
+                    <TableRow>
+                        <CheckBox
+                            android:text="개인정보수집 및 이용에 관한 동의"
+                            />
+
+                        <Button
+                            android:id="@+id/agreebtn"
+                            android:background="#00FF0000"
+                            android:text="[자세히보기]"
+                            />
+                    </TableRow>
+
+                    <TextView
+                        android:layout_height="55dp"
+                        />
+
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.team.smart.customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/framButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="즉시 회의실 견적받기"
+            android:background="@drawable/send_inq_rect"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
